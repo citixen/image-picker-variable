@@ -1,0 +1,41 @@
+{
+  "tableName": {
+    "type": "string",
+    "label": "Source Table"
+  },
+  "query": {
+    "type": "string",
+    "label": "Query"
+  },
+  "orderField": {
+    "type": "string",
+    "label": "Field to sort images by"
+  },
+  "imageField": {
+    "type": "string",
+    "label": "Image Field"
+  },
+  "valueField": {
+    "type": "string",
+    "label": "Value Field"
+  },
+  "targetVariable": {
+    "type": "string",
+    "label": "Target Variable Name"
+  },
+  "maxColumns": {
+    "type": "number",
+    "label": "Number of Columns",
+    "default": 3
+  },
+  "minColWidth": {
+    "type": "number",
+    "label": "Minimum column width",
+    "default": 50
+  },
+  "showLabels": {
+    "type": "boolean",
+    "label": "Show Value Labels Under Images",
+    "default": false
+  }
+}
