@@ -1,0 +1,12 @@
+<div class="image-picker-widget">
+  <div class="image-grid" ng-style="gridStyle">
+    <div class="image-tile" ng-repeat="img in data.images"
+         ng-click="!isReadOnly && selectImage(img)"
+         ng-class="{'selected': img === selectedImage, 'readonly': isReadOnly}">
+      <img ng-src="{{img.image}}" alt="{{img.value}}" class="selectable-image" ng-style="{'max-width': options.maxImageWidth + 'px'}"/>
+      <div class="image-label" ng-if="options.showLabels">
+      	{{ img.value }}
+    	</div>
+    </div>
+  </div>
+</div>
