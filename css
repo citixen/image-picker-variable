@@ -1,0 +1,41 @@
+.image-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.image-tile {
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: border-color 0.2s;
+  padding: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-tile.selected {
+  border-color: #3276b1;
+}
+
+.image-tile.readonly {
+  cursor: default;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.image-label {
+    margin-top: 6px;
+    font-size: 0.85em;
+    color: #444;
+    text-align: center;
+    word-break: break-word;
+  }
+
+.selectable-image {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+}
